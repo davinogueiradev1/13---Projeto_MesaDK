@@ -1,16 +1,17 @@
 #include <Arduino.h>
 #include <ArduinoJson.h>
 #include <Adafruit_NeoPixel.h>
+#include <LED.h>
 
 #include "WiFiManager.h"
 #include "MqttManager.h"
 #include "DebugManager.h"
 
-/*Autor: Davi Nogueira
-Programa: 12 - MQTT
-Descrição: MQTT fundamentos
-Data: 24/04/2026
-Versão:1.0
+/*Autor: Davi Nogueira, Fellipe Simon, Gabriel Bocchino, Gabriel Expindola e Heitor Barreto
+Programa: Projeto MesaDK
+Descrição: Projeto de automação inteligente de um maquinário
+Data: 06/05/2026 - 08/05/2026
+Versão: 1.0
 */
 
 const int PINO_LAMPADA = 3;
