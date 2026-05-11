@@ -29,8 +29,8 @@ const int STATUS_ALERTA    = 2;
 const int STATUS_FALHA     = 3;
 
 // * MQTT / Endereços
-const char TOPICO_COMANDO[] = "senai134/davinogueira/esp32/comando";
-const char TOPICO_STATUS[]  = "senai134/davinogueira/esp32/status";
+const char TOPICO_COMANDO[] = "senai/esp32/status";
+
 
 // * OBJETOS
 LiquidCrystal_I2C lcd(0x27, 20, 4);
@@ -238,7 +238,7 @@ void tratarMensagemRecebida(const char *topico, const String &mensagem)
 
 void tratarJsonComando(const String &mensagem) 
 {
-  JsonDocument doc;
+  StaticJsonDocument<256> doc;
   if (deserializeJson(doc, mensagem)) 
   {
     debugErro("Erro ao interpretar JSON");

@@ -16,7 +16,7 @@ const char* WIFI_SENHA = "info@134";
  const char* MQTT_BROKER = "b53c425c8b904a98be8a18e694e8014c.s1.eu.hivemq.cloud";
  const int MQTT_PORTA = 8883;
 
- const char* MQTT_CLIENT_ID = "esp32_davi_nogueira";
+ const char* MQTT_CLIENT_ID = "esp32_gabriel_expindola";
 
  const char* MQTT_USUARIO = "davii";
  const char* MQTT_SENHA = "Senai@134";
@@ -59,15 +59,14 @@ emyPxgcYxn/eR44/KJ4EBs+lVDR3veyJm+kXQ99b21/+jh5Xos1AnX5iItreGCc=
 )EOF";
 
  const char* TOPICOS_PUBLICAR[] ={
-    "senai/esp32/status",
     "senai/esp32/log",
     "senai/esp32/resposta"
 };
 
- const int TOTAL_TOPICOS_PUBLICAR = 3;
+ const int TOTAL_TOPICOS_PUBLICAR = 2;
 
  const char* TOPICOS_RECEBER[]={
-    "senai134/davinogueira/esp32/comando",
+    "senai/esp32/status",
     "senai134/davinogueira/esp32/config",
     "senai134/davinogueira/esp32/display"
 };
